@@ -1,14 +1,61 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
+  .hero
+    margin-top: 30px
+    &-container
+      
+      margin-left: 20px
+      margin-right: 20px
   
 @media (max-width: 992px)
   .container
     max-width: 750px
+    
   .header
+    position: relative
     align-items: center
+    padding-top: 28px
+    &--fixed
+      position: fixed
+      left: 0
+      top: 0
+      right: 0
+      background-color: #fff
+      z-index: 99
     &-menu
       display: none
+      &--visible
+        display: block
+        position: absolute
+        top: 16px
+        right: 8px
+        left: 8px
+        height: 324px
+        background-color: #fff
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: left
+        padding: 36px 24px
+        box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16)
+        
+      &__button
+        width: 100%
+        max-width: 256px
+        margin-left: 0
+        margin-right: 0
+        padding-top: 9px
+        padding-bottom: 9px
+        font-size: 16px
+      &__link
+        margin-bottom: 20px
+        margin-right: 0
+        margin-left: 0
+      
+
+        
+        
       &__mobile
         height: 17px
         width: 22px
@@ -21,9 +68,122 @@
         width: 22px
         height: 2.2px
         background-color:#3A4C66
+      &__close
+        display: block
+        position: absolute
+        top: 16px
+        right: 19px
+  
+  .hero
+    margin-top: 88px
+    &-container
+      padding-top: 36px
+      padding-left: 28px
+    &-tag
+      margin-bottom: 24px
+    &-title
+      margin-bottom: 20px
+      font-size: 48px
+      line-height: 60px
+    &-text
+      font-size: 18px
+      line-height: 32px
+      max-width: 400px
+      margin-bottom: 36.5px
+    &-button
+      margin-bottom: 40.5px
+      
 @media (max-width: 768px)  
   .container
     max-width: 650px
     width: 86%   
   .header
     padding: 18px 0
+  .hero
+    margin-top: 88px
+    &-container
+      max-width: 728px
+      background-position: 60% 40% 
+@media (max-width: 576px)
+  .container
+    width: 90%  
+  .hero
+    &-title
+      font-size: 32px
+      line-height: 40px
+      width: 60%
+      margin-bottom: 20px
+    &-text
+      font-size: 16px
+      line-height: 28px
+      width: 70%
+    &-button
+      width: 257px
+      padding: 13px 49px
+      font-size: 16px 
+      line-height: 22px
+    &-frame
+      max-width: 95%
+      margin: auto
+      margin-left: 0
+      &__link
+        margin-right: 16px
+        margin-bottom: 16px
+        &:first-child
+          margin-left: 0
+      &__img
+        height: 24px
+        width: 24px
+
+  
+      
+
+
+
+
+
+
+@media (max-width: 480px) and (min-width: 320px)  
+  .header
+    &-menu
+      &--visible
+        align-items: left
+        margin-left: 0
+
+  .hero
+    max-height: 899px
+    &-container
+      display: flex
+      height: 100%
+      margin-left: 0
+      margin-right: 0
+      background-image: url(../img/Header-bg-mobile.png)
+      background-size: 100%
+      padding-top: 381px
+      background-position: top 
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      padding-left: 20px
+      padding-right: 20px
+    &-tag
+      width: 196px
+    &-title
+      width: 100%
+      text-align: center
+      //margin-left: 18px
+      //margin-right: 18px
+    &-text
+      text-align: center
+      width: 100%
+      margin-bottom: 24px
+    &-frame
+      width: 100%
+      flex-wrap: wrap
+      justify-content: center
+      
+    
+
+      
+    
+       
