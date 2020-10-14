@@ -4,9 +4,21 @@
   .hero
     margin-top: 30px
     &-container
-      
       margin-left: 20px
       margin-right: 20px
+  .collection
+    &-container
+      flex-direction: column
+    &-left
+      justify-content: center
+      margin-right: 0
+      margin-bottom: 40px
+    &-right
+      max-width: 100%
+      margin-top: 0
+      &__text
+        max-width: 100%
+        margin-bottom: 24px
   
 @media (max-width: 992px)
   .container
@@ -104,10 +116,15 @@
     &-container
       max-width: 728px
       background-position: 60% 40% 
+  .collection
+    &-left
+      &__img
+        width: 50%
 @media (max-width: 576px)
   .container
     width: 90%  
   .hero
+    margin-bottom: 64px
     &-title
       font-size: 32px
       line-height: 40px
@@ -134,6 +151,38 @@
       &__img
         height: 24px
         width: 24px
+  .collection
+    margin-top: 0
+    &-left
+      flex-direction: column
+      margin-bottom: 40px
+      &__img
+        height: 300px
+        width: 100%
+        max-width: 100%
+  
+    &-center
+      display: flex
+      justify-content: space-between
+      height: 150px
+      width: 100%
+      margin-left: 0
+      margin-top: 14px
+      &__img
+        height: 100%
+        width: 48%
+    &-right
+      &__title
+        margin-bottom: 20px
+        font-size: 36px
+        line-height: 36px
+      &__text
+        font-size: 18px
+      &__link
+        font-size: 16px
+        
+        
+        
 
   
       
@@ -181,6 +230,22 @@
       width: 100%
       flex-wrap: wrap
       justify-content: center
+  .collection
+    margin-bottom: 104px
+    &-center
+      height: 100px
+    &-right
+      
+      &__title
+        font-size: 28px
+        line-height: 36px
+        text-align: center
+      &__text
+        font-size: 16px
+        line-height: 28px
+        text-align: center
+      &__link
+        display: none
       
     
 
